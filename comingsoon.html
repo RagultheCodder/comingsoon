@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>
+        ALTARIQ
+    </title>
+
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <div class="header">
+        <a href="./index.html"><img src="./img/logo.svg" class="image-res align-logo" /></a>
+    </div>
+    <div class="text-container">
+        <p class="center welcome-text">Altariq Groups</p>
+        <p class="center welcome-text">Great things coming</p>
+        <p class="center welcome-text">Soon...</p>
+    </div>
+
+    <div class="container counter">
+        <ul>
+          <li><span id="days"></span>days</li>
+          <li><span id="hours"></span>Hours</li>
+          <li><span id="minutes"></span>Minutes</li>
+          <li><span id="seconds"></span>Seconds</li>
+        </ul>
+      </div>
+
+    <div class="footer-text" style="position: absolute; bottom: 10px; width: 100%">
+        <p>All rights reserved &#169;<span id="date"></span> Altariq Groups</p>
+    </div>
+
+    <script src="./script.js"></script>
+    <script>
+        const date = new Date;
+        document.getElementById("date").innerHTML = date.getFullYear();
+    </script>
+
+
+</body>
+
+</html>
